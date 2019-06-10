@@ -96,6 +96,7 @@ a{
 
 /*Nav bar begins*/
 nav{
+    height:50px;
     grid-area: nav;
     display: flex;
     justify-content: flex-end;
