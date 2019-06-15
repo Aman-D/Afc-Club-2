@@ -41,7 +41,5 @@ window.onload = function(){
 
     /*Tablet*/
     
-   const callout = document.getElementsByClassName("callout");
-   console.log(callout);
 
 }
