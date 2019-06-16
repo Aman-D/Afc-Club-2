@@ -3,17 +3,19 @@ window.onload = function(){
     const navTop = navbar.offsetTop;
     console.log(navTop);
 
+
+
     window.addEventListener("scroll",function(){
         if (window.pageYOffset >= navTop) {
             navbar.classList.add("sticky");
-            document.getElementById("about").style.marginTop = "10px";
-            document.getElementById("events").style.marginTop = "10px";
-            navbar.style.height = "60px";
+            document.getElementById("about").style.paddingTop = "20px";
+            document.getElementById("events").style.paddingTop = "20px";
+            // // navbar.style.height = "60px";
           } else {
             navbar.classList.remove("sticky");
-            document.getElementById("about").style.marginTop = "0px";
-            document.getElementById("events").style.marginTop = "0px";
-            navbar.style.height = "50px";
+            // document.getElementById("about").style.marginTop = "0px";
+            // document.getElementById("events").style.marginTop = "0px";
+            
           }
     });
 
