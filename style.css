@@ -192,7 +192,7 @@ nav a{
 }
 .faculty img{
     height:200px;
-    width:175px;
+    width:165px;
 }
 .faculty div p{
     padding:10px;
@@ -304,7 +304,7 @@ table{
     border:2px solid rgba(255, 255, 255, 0.178);
     padding:10px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.178);
+    background-color: rgba(255, 255, 255, 0.76);
     color:rgba(5, 5, 5, 0.836);
     
 }
