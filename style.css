@@ -67,8 +67,18 @@ a{
     text-align: center;
     color:white;
 }
+
+.heading h1{
+    font-size:50px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+
 .tag-line p{
     text-align: center;
+    font-size:25px;
+    letter-spacing: 3px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 .logo{
     margin:20px;
@@ -390,13 +400,14 @@ background-color: #F2F2F2;
     
 }
 .event-box{
-   border:30px solid #395959;
+   border:15px solid #395959;
    height:450px;
    border-radius:20px;
    overflow-y: scroll;
    position: relative;
    background: url(./img/d4.jpg);
    background-size: cover;
+   box-shadow: inset 0px 0px 17px 3px rgba(0,0,0,0.9);
    
 
 }
