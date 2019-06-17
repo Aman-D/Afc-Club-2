@@ -31,7 +31,8 @@ const scene1 = new ScrollMagic.Scene({
     duration:380,
     reverse:true
 })
-// .setTween(tween1).addIndicators()
+.setTween(tween1)
+//.addIndicators()
 .addTo(controller);
 
 const scene2 = new ScrollMagic.Scene({
