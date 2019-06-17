@@ -1,4 +1,4 @@
-window.onload = function(){
+
   
 
 
@@ -72,4 +72,3 @@ window.onload = function(){
       document.documentElement.scrollTop = 0; 
     });
 
-}

@@ -27,20 +27,19 @@ const controller = new ScrollMagic.Controller();
 
 const scene1 = new ScrollMagic.Scene({
     trigger:"#project",
-    offset:500,
-    duration:450,
+    offset:650,
+    duration:380,
     reverse:true
 })
-.setTween(tween1)
-// .addIndicators()
+.setTween(tween1).addIndicators()
 .addTo(controller);
 
 const scene2 = new ScrollMagic.Scene({
     trigger:"#project",
-    offset:1165,
+    offset:1305,
     duration:300,
     reverse:true
 })
 .setTween(tween2)
-// .addIndicators()
+.addIndicators()
 .addTo(controller);
