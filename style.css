@@ -3,21 +3,6 @@
     --font2:'Saira Semi Condensed', sans-serif;
     --font3:'Titillium Web', sans-serif;
 }
-/* 
-.event-box::-webkit-scrollbar{
-    width:10px;
-    border-radius: 2px;
-}
-.event-box::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
- .event-box::-webkit-scrollbar-thumb {
-    background: #009FB7; 
-  }
-  .event-box::-webkit-scrollbar-thumb:hover {
-    background: rgb(108, 162, 170);
-    
-  }  */
 
   body::-webkit-scrollbar{
       width:10px;
@@ -62,7 +47,17 @@ a{
     text-decoration: none;
     color:black;
 }
-
+#backToTop{
+    position: fixed;
+    left:-100px;
+    bottom:25px;
+    width:45px;
+    height:50px;
+    background-color:#009FB7;
+    z-index: 99;
+    opacity:0;
+    transition: all 1s ease;
+}
 
 
 
@@ -131,7 +126,7 @@ a{
 
 /*Nav bar begins*/
 nav{
-    height:50px;
+ 
     grid-area: nav;
     display: flex;
     justify-content:center;
@@ -143,20 +138,28 @@ nav{
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-nav li{
+/* nav li{
     list-style-type: none;
     height:100%;
     width:90px;
     display: flex;
     justify-content: center;
     align-items:center;
-}
+} */
 nav a{
     display: block;
-    text-decoration: none;
     box-sizing: content-box;
     color:white;
+    padding:15px;
+    margin:0 3px;
 }
+nav a:hover{
+    background-color: white;
+    color: #009FB7;
+}
+
+
+
 .sticky {
     position: fixed;
     top: 0;
@@ -164,13 +167,19 @@ nav a{
     height: 50px;
     transition: all 0.7s ease;
   }
-  li:hover{
+  /* li:hover{
       background-color:white;
       
   }
   li:hover a{
     color:#009FB7;
   }
+  nav a:active{
+    color:black;
+}
+nav a:active li{
+    background-color:white;
+} */
 
 /*Nav bar Ends*/
 
@@ -296,6 +305,7 @@ display: none;
     font-size: 100px;
     font-family:var(--font2);
     color:rgb(255, 255, 255);
+    text-align: center;
 }
 .modal-para{
     display: flex;
@@ -333,8 +343,30 @@ tr:hover {background-color: #f5f5f5;}
     width:20px;
     border-radius: 2px;
   }
- 
 
+  .modal-creators{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 100px;
+  }
+  .creator{
+      height:180px;
+      background-color: white;
+      margin: 10px;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+
+  }
+  .creator img{
+      width:150px;
+      height:150px;
+  }
+  .creator p{
+      font-size: 13px;
+      color:black;
+      text-align: center;
+  }
 
 /*Project*/
 
@@ -393,7 +425,7 @@ tr:hover {background-color: #f5f5f5;}
     font-size: 25px;
 }
 .profile-title{
-    font-size: 22px;
+    font-size: 16px;
 }
 .profile-icons{
     margin:20px 10px;
