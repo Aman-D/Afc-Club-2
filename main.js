@@ -8,8 +8,8 @@ window.onload = function(){
     window.addEventListener("scroll",function(){
         if (window.pageYOffset >= navTop) {
             navbar.classList.add("sticky");
-            document.getElementById("about").style.paddingTop = "20px";
-            document.getElementById("events").style.paddingTop = "20px";
+            // document.getElementById("about").style.paddingTop = "20px";
+            // document.getElementById("events").style.paddingTop = "20px";
             // // navbar.style.height = "60px";
           } else {
             navbar.classList.remove("sticky");
